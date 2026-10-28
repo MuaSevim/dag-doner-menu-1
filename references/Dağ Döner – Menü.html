@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dağ Döner – Menü</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121a13;--pine:#2f4f2a;--moss:#7fa83a;--fire:#e8571f;--sun:#f6b73c;--paper:#f7f0df;--card:#fffaf0;--line:#e4d9bd;--mute:#6b6a58;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141b15;--card:#1d2720;--line:#33423a;--ink:#f7f0df;--mute:#b3b39d}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Lilita One",Impact,sans-serif;font-weight:400;margin:0;letter-spacing:.01em}
+.hero{position:relative;background:#121a13;color:#f7f0df;text-align:center;padding:56px 20px 130px;overflow:hidden}
+.hero svg.logo{width:min(260px,62vw);height:auto;animation:rise .9s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes rise{from{transform:translateY(30px) scale(.9);opacity:0}}
+.hero h1{font-size:clamp(2.4rem,9vw,4.6rem);line-height:1;margin-top:10px}
+.hero h1 span{color:var(--sun)}
+.hero p{max-width:34ch;margin:14px auto 0;color:#d9d2bb;font-size:1.05rem}
+.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:110px;display:block}
+.cta{display:inline-block;margin-top:22px;background:var(--fire);color:#fff;padding:12px 26px;border-radius:99px;font-weight:700;text-decoration:none;box-shadow:0 4px 0 #a73a10}
+.cta:active{transform:translateY(3px);box-shadow:0 1px 0 #a73a10}
+nav{position:sticky;top:0;z-index:20;background:var(--paper);padding:calc(10px + env(safe-area-inset-top,0px)) 0 10px;border-bottom:2px solid var(--line)}
+nav .row{display:flex;gap:8px;overflow-x:auto;padding:0 16px;scrollbar-width:none;max-width:1100px;margin:auto}
+nav a{flex:none;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;padding:8px 14px;border-radius:99px;border:2px solid var(--line);background:var(--card);white-space:nowrap}
+nav a.on{background:var(--pine);border-color:var(--pine);color:#fff}
+nav a:focus-visible,.cta:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+main{max-width:1100px;margin:auto;padding:10px 16px 60px}
+section{padding-top:34px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.head .ic{font-size:2rem;width:56px;height:56px;border-radius:18px;background:var(--pine);display:grid;place-items:center;transform:rotate(-6deg)}
+.head h2{font-size:clamp(1.7rem,5vw,2.4rem);color:var(--pine)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .head h2{color:var(--moss)}}
+.note{color:var(--mute);margin:0 0 16px;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+.item{display:flex;gap:14px;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:12px;transition:transform .15s,border-color .15s}
+.item:hover{transform:translateY(-3px) rotate(-.4deg);border-color:var(--fire)}
+.pic{flex:none;width:96px;height:96px;border-radius:16px;display:grid;place-items:center;font-size:2.8rem;background:linear-gradient(145deg,var(--c1),var(--c2))}
+.txt{flex:1;min-width:0;display:flex;flex-direction:column}
+.txt h3{font-size:1.15rem;line-height:1.15}
+.txt p{margin:4px 0 8px;color:var(--mute);font-size:.86rem;line-height:1.35}
+.price{margin-top:auto;font-family:"Lilita One",sans-serif;font-size:1.4rem;color:var(--fire)}
+.tag{display:inline-block;background:var(--sun);color:#3a2a00;font-size:.72rem;font-weight:700;border-radius:99px;padding:2px 9px;margin-left:6px;vertical-align:middle;font-family:Figtree,sans-serif}
+.list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 14px}
+@media(max-width:720px){.list{grid-template-columns:1fr}}
+.row2{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:10px 4px;border-bottom:2px dotted var(--line)}
+.row2 b{font-weight:600}.row2 small{display:block;color:var(--mute);font-size:.78rem}
+.row2 i{font-style:normal;font-family:"Lilita One",sans-serif;color:var(--fire);font-size:1.15rem;white-space:nowrap}
+footer{background:#121a13;color:#d9d2bb;text-align:center;padding:40px 20px calc(40px + env(safe-area-inset-bottom,0px));position:relative}
+footer b{font-family:"Lilita One",sans-serif;font-size:1.6rem;color:var(--sun);font-weight:400}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="logo" viewBox="0 0 260 170" role="img" aria-label="Dağ Döner logosu">
+    <path d="M10 120 L85 28 L120 70 L150 20 L250 120Z" fill="#2f4f2a"/>
+    <path d="M85 28 L120 70 L100 78 L70 52Z M150 20 L200 80 L170 84 L140 52Z" fill="#7fa83a"/>
+    <rect x="127" y="6" width="6" height="22" rx="3" fill="#f7f0df"/>
+    <path d="M110 30 Q130 18 150 30 L146 100 Q130 108 114 100Z" fill="#e8571f"/>
+    <path d="M114 50 H146 M115 70 H145 M116 88 H144" stroke="#a73a10" stroke-width="3"/>
+    <path d="M100 112 q8-16 16 0 q-2-8 6-14 q4 12 12 6 q-2 12 8 8" fill="none" stroke="#f6b73c" stroke-width="4" stroke-linecap="round"/>
+    <text x="130" y="152" text-anchor="middle" font-family="Lilita One,Impact,sans-serif" font-size="34" fill="#f7f0df">DAĞ <tspan fill="#e8571f">DÖNER</tspan></text>
+  </svg>
+  <h1>Lezzetin <span>zirvesi</span></h1>
+  <p>Sıcak sıcak tavuk döner, bol sos, çıtır patates. Canın ne çekiyorsa dorukta.</p>
+  <a class="cta" href="#klasik">Menüye göz at</a>
+  <svg class="ridge" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 110V70L120 30 220 65 340 15 480 70 600 35 740 80 880 20 1010 65 1100 40 1200 75V110Z" fill="#2f4f2a"/><path d="M0 110V90L160 60 300 88 460 55 620 90 780 58 940 92 1080 66 1200 92V110Z" fill="var(--paper)"/></svg>
+</header>
+<nav aria-label="Kategoriler"><div class="row" id="tabs"></div></nav>
+<main id="app"></main>
+<footer><b>Dağ Döner</b><p>Fiyatlara KDV dahildir. Görseller temsilidir.<br>Alerjen bilgisi için lütfen çalışanlarımıza danışın.</p></footer>
+<script>
+const M=[
+["klasik","Klasik Dönerlerimiz","🥪","Ekmek arası ya da lavaşta; yanında biber.",["#5a3a1c","#c98a3d"],[
+["Yarım Ekmek Arası Tavuk Döner","60 g tavuk döner, marul, domates; yarım somun ekmek.",90],
+["Tam Ekmek Arası Tavuk Döner","110 g tavuk döner, marul, domates; tam somun ekmek.",180],
+["Yarım Lavaşta Tavuk Döner","60 g tavuk döner, marul ve domates.",90],
+["Tam Lavaşta Tavuk Döner","110 g tavuk döner, marul ve domates.",180],
+["Dağ Döner","150 g tavuk döner, marul, domates, patates, özel sarımsaklı mayonez.",250,1],
+["Tavuk Döner (Tek Kişilik)","Salata, soğan, biber, közlenmiş biber ve lavaş ekmek ile.",450]]],
+["hatay","Hatay Usulü Tavuk Dönerler","🌯","Patates, turşu, özel Hatay sosu ve sarımsaklı mayonez; yanında süs biber.",["#9a3c10","#f08a2a"],[
+["Hatay Usulü Tavuk Dürüm (S)","70 g tavuk döner",140],
+["Hatay Usulü Tavuk Dürüm (M)","110 g tavuk döner",190,1],
+["Hatay Usulü Tavuk Dürüm (L)","130 g tavuk döner",220],
+["Hatay Usulü Tavuk Dürüm (XL)","150 g tavuk döner",250]]],
+["burrito","Dağ Burritoları","🌮","Patates, marul, domates, cheddar sos ve Dağ Döner özel sosu.",["#7a2a10","#e8571f"],[
+["Dağ Burrito (120 g)","120 g tavuk döner",250],
+["Dağ Tavuk Döner Burrito (140 g)","140 g tavuk döner",280],
+["Dağ Tavuk Döner Burrito (160 g)","160 g tavuk döner",310]]],
+["burger","Çıtır Burger","🍔","",["#6b4a12","#f6b73c"],[
+["Çıtır Tavuk Burger","Çıtır tavuk, marul, domates, salatalık turşusu, ketçap, özel mayonez.",190]]],
+["menu","Avantajlı Menüler","🍟","Tek kişilik menüler: ürün + patates kızartması (100 g) + ayran.",["#2f4f2a","#7fa83a"],[
+["Yarım Ekmek Arası Döner Menü","Yarım ekmek arası tavuk döner + patates + ayran",220],
+["Tam Ekmek Arası Döner Menü","110 g tam ekmek arası + patates + ayran",310],
+["Yarım Lavaş Döner Menü","60 g yarım lavaş + patates + ayran",220],
+["Tam Lavaş Döner Menü","110 g tam lavaş + patates + ayran",300],
+["Hatay Menü (S)","70 g Hatay dürüm + patates + ayran",270],
+["Hatay Menü (M)","110 g Hatay dürüm + patates + ayran",320],
+["Hatay Menü (L)","130 g Hatay dürüm + patates + ayran",350],
+["Hatay Menü (XL)","150 g Hatay dürüm + patates + ayran",380]]],
+["kola","Coca-Cola Fırsat Menüleri","🥤","Patates kızartması (100 g) ve Coca-Cola (33 cl) ile.",["#8a1414","#e23a2a"],[
+["Fırsat Menü – Tavuk Burger","Tavuk burger + patates + Coca-Cola",380],
+["Fırsat Menü – Hatay Usulü (M)","Hatay dürüm + patates + Coca-Cola",390],
+["Fırsat Menü – Hatay Usulü (L)","130 g Hatay dürüm + patates + Coca-Cola",380],
+["Fırsat Menü – 2’li Hatay (M)","2 adet Hatay M dürüm (110’ar g) + patates + 2 Coca-Cola",660]]],
+["ogrenci","Öğrenci Menüleri","🎒","Ayran (20 cl) dahil.",["#1f4a6b","#4aa0d8"],[
+["Öğrenci Doyuran Döner Dürüm Menü","Yarım lavaş tavuk döner (60 g) + ayran",120],
+["Öğrenci Yarım Ekmek Arası Menü","Yarım ekmek arası döner (60 g) + ayran",120],
+["Öğrenci Hatay Dürüm Menü","Hatay dürüm (70 g) + ayran",170],
+["Öğrenci Çıtır Tavuk Burger Menü","Çıtır tavuk burger + ayran",220]]],
+["aile","2’li & Aile Menüler","👨‍👩‍👧","Paylaşmak daha lezzetli.",["#4a2a6b","#a070d8"],[
+["Hatay Duo Menü","2 adet Hatay M dürüm + patates (200 g) + menü içecekleri",540],
+["Karışık 2’li Menü","Hatay dürüm + tam somun ekmek arası döner + yan ürünler",670],
+["Hatay 3’lü Menü","3 adet Hatay M dürüm + 2 porsiyon patates + içecek",740],
+["Hatay Aile Menü","4 adet Hatay M dürüm + 2 porsiyon patates + içecek",1100,1]]],
+["yan","Yan Ürünler & Soslar","🧅","",["#5a4a12","#d8b030"],[
+["Patates Kızartması (Orta)","Parmak dilim",100],["Patates Kızartması (Büyük)","Parmak dilim",140],
+["Soğan Halkası (6 adet)","Çıtır soğan halkası",70],["Soğan Halkası (12 adet)","Çıtır soğan halkası",140],
+["Tavuk Nugget (4 adet)","",80],["Tavuk Nugget (8 adet)","",160],
+["Lavaş","1 adet",30],["Süs Biberi Turşusu","",10],["Jalapeno","",20]],
+[["Ketçap",10],["Mayonez",10],["Sarımsaklı Mayonez",15],["Acı Sos",15],["Cheddar Sosu",20]]],
+["icecek","İçecekler","🥤","",["#1f4a6b","#4aa0d8"],null,
+[["Ayran 20 cl",30],["Ayran 27,5 cl",50],["Su 50 cl",30],["Su 1,5 L",50],["Şalgam Suyu 30 cl",50],["Limonata 25 cl",50],
+["Coca-Cola 33 cl",90],["Coca-Cola Zero Sugar 33 cl",90],["Fanta 33 cl",90],["Sarıyer Cola 33 cl",90],
+["Fuse Tea 33 cl","Şeftali, Limon, Karpuz, Mango & Ananas, Karpuz & Çilek",90],
+["Coca-Cola 1 L",120],["Coca-Cola 1,5 L",150],["Coca-Cola 2,5 L",200],
+["Fanta 1 L",120],["Fanta 1,5 L",150],["Fanta 2,5 L",200],
+["Sade Soda 20 cl",35],["Limonlu Soda 20 cl",40],["Elmalı Soda 20 cl",40]]]
+];
+const em=n=>/Burrito/.test(n)?"🌯":/Hatay/.test(n)?"🌯":/Lavaş/.test(n)?"🌯":/Burger/.test(n)?"🍔":/Patates/.test(n)?"🍟":/Soğan/.test(n)?"🧅":/Nugget/.test(n)?"🍗":/Biber|Jalapeno/.test(n)?"🌶️":/Menü|Duo|3’lü|Aile/.test(n)?"🍱":"🥙";
+const t=n=>n.toLocaleString("tr-TR")+" ₺";
+const app=document.getElementById("app"),tabs=document.getElementById("tabs");
+M.forEach(([id,title,ic,note,[c1,c2],items,list])=>{
+  tabs.insertAdjacentHTML("beforeend",`<a href="#${id}" data-id="${id}">${ic} ${title.replace("Dönerlerimiz","").replace("Tavuk ","").trim()}</a>`);
+  let h=`<section id="${id}"><div class="head"><div class="ic" aria-hidden="true">${ic}</div><h2>${title}</h2></div>${note?`<p class="note">${note}</p>`:""}`;
+  if(items&&id!=="yan")h+=`<div class="grid">`+items.map(([n,d,p,pop])=>`<article class="item" style="--c1:${c1};--c2:${c2}"><div class="pic" aria-hidden="true">${em(n)}</div><div class="txt"><h3>${n}${pop?'<span class="tag">Favori</span>':""}</h3><p>${d}</p><div class="price">${t(p)}</div></div></article>`).join("")+`</div>`;
+  if(id==="yan"){h+=`<div class="list">`+items.map(([n,d,p])=>`<div class="row2"><b>${n}${d?`<small>${d}</small>`:""}</b><i>${t(p)}</i></div>`).join("")+`</div><h3 style="margin:22px 0 4px;color:var(--pine)">Soslar</h3><div class="list">`+list.map(([n,p])=>`<div class="row2"><b>${n}</b><i>${t(p)}</i></div>`).join("")+`</div>`}
+  if(id==="icecek")h+=`<div class="list">`+list.map(([n,d,p])=>{if(p===undefined){p=d;d=""}return `<div class="row2"><b>${n}${d?`<small>${d}</small>`:""}</b><i>${t(p)}</i></div>`}).join("")+`</div>`;
+  app.insertAdjacentHTML("beforeend",h+"</section>");
+});
+const links=[...tabs.children];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle("on",l.dataset.id===e.target.id));const a=tabs.querySelector(".on");a&&tabs.scrollTo({left:a.offsetLeft-20,behavior:"smooth"})}}),{rootMargin:"-30% 0px -65% 0px"});
+document.querySelectorAll("section").forEach(s=>io.observe(s));
+</script>
+</body>
+</html>

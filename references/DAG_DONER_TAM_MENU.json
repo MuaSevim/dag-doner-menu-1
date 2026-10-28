@@ -1,0 +1,434 @@
+[
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Yarım Ekmek Arası Tavuk Döner",
+    "aciklama": "60 g tavuk döner, taze marul ve domates; yarım somun ekmek. Yanında biber.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Tam Ekmek Arası Tavuk Döner",
+    "aciklama": "110 g tavuk döner, taze marul ve domates; tam somun ekmek. Yanında biber.",
+    "fiyat_tl": 180
+  },
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Yarım Lavaşta Tavuk Döner",
+    "aciklama": "60 g tavuk döner, marul ve domates. Yanında biber.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Tam Lavaşta Tavuk Döner",
+    "aciklama": "110 g tavuk döner, marul ve domates. Yanında biber.",
+    "fiyat_tl": 180
+  },
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Dağ Döner",
+    "aciklama": "150 g tavuk döner, marul, domates, patates ve özel sarımsaklı mayonez. Yanında biber.",
+    "fiyat_tl": 250
+  },
+  {
+    "kategori": "Klasik Dönerlerimiz",
+    "urun_adi": "Tavuk Döner (Tek Kişilik)",
+    "aciklama": "Salata, soğan, biber, közlenmiş biber ve lavaş ekmek ile servis edilir.",
+    "fiyat_tl": 450
+  },
+  {
+    "kategori": "Hatay Usulü Tavuk Dönerler",
+    "urun_adi": "Hatay Usulü Tavuk Dürüm (S)",
+    "aciklama": "70 g tavuk döner, patates kızartması, salatalık turşusu, özel Hatay sosu ve özel sarımsaklı mayonez. Yanında süs biber.",
+    "fiyat_tl": 140
+  },
+  {
+    "kategori": "Hatay Usulü Tavuk Dönerler",
+    "urun_adi": "Hatay Usulü Tavuk Dürüm (M)",
+    "aciklama": "110 g tavuk döner, patates kızartması, salatalık turşusu, özel Hatay sosu ve özel sarımsaklı mayonez. Yanında süs biber.",
+    "fiyat_tl": 190
+  },
+  {
+    "kategori": "Hatay Usulü Tavuk Dönerler",
+    "urun_adi": "Hatay Usulü Tavuk Dürüm (L)",
+    "aciklama": "130 g tavuk döner, patates kızartması, salatalık turşusu, özel Hatay sosu ve özel sarımsaklı mayonez. Yanında süs biber.",
+    "fiyat_tl": 220
+  },
+  {
+    "kategori": "Hatay Usulü Tavuk Dönerler",
+    "urun_adi": "Hatay Usulü Tavuk Dürüm (XL)",
+    "aciklama": "150 g tavuk döner, patates kızartması, salatalık turşusu, özel Hatay sosu ve özel sarımsaklı mayonez. Yanında süs biber.",
+    "fiyat_tl": 250
+  },
+  {
+    "kategori": "Dağ Burritoları",
+    "urun_adi": "Dağ Burrito (120 gr.)",
+    "aciklama": "120 g tavuk döner, patates kızartması, marul, domates, cheddar sos ve Dağ Döner özel sosu.",
+    "fiyat_tl": 250
+  },
+  {
+    "kategori": "Dağ Burritoları",
+    "urun_adi": "Dağ Tavuk Döner Burrito (140 g)",
+    "aciklama": "140 g tavuk döner, patates kızartması, marul, domates, cheddar sos ve Dağ Döner özel sosu.",
+    "fiyat_tl": 280
+  },
+  {
+    "kategori": "Dağ Burritoları",
+    "urun_adi": "Dağ Tavuk Döner Burrito (160 g)",
+    "aciklama": "160 g tavuk döner, patates kızartması, marul, domates, cheddar sos ve Dağ Döner özel sosu.",
+    "fiyat_tl": 310
+  },
+  {
+    "kategori": "Coca-Cola Fırsat Menüleri",
+    "urun_adi": "Fırsat Menü - Tavuk Burger",
+    "aciklama": "Tavuk burger + patates kızartması (100 g) + Coca-Cola (33 cl).",
+    "fiyat_tl": 380
+  },
+  {
+    "kategori": "Coca-Cola Fırsat Menüleri",
+    "urun_adi": "Fırsat Menü - Hatay Usulü (M)",
+    "aciklama": "Hatay usulü tavuk dürüm + patates kızartması (100 g) + Coca-Cola (33 cl).",
+    "fiyat_tl": 390
+  },
+  {
+    "kategori": "Coca-Cola Fırsat Menüleri",
+    "urun_adi": "Fırsat Menü - Hatay Usulü (L)",
+    "aciklama": "Hatay usulü tavuk dürüm (130 g) + patates kızartması (100 g) + Coca-Cola (33 cl).",
+    "fiyat_tl": 380
+  },
+  {
+    "kategori": "Coca-Cola Fırsat Menüleri",
+    "urun_adi": "Fırsat Menü - 2'li Hatay Usulü (M)",
+    "aciklama": "2 adet Hatay usulü M dürüm (110’ar g) + patates kızartması + 2 adet Coca-Cola (33 cl).",
+    "fiyat_tl": 660
+  },
+  {
+    "kategori": "Öğrenci Menüleri",
+    "urun_adi": "Öğrenci Hatay Usulü Tavuk Döner Dürüm (70 g) Menü",
+    "aciklama": "Hatay usulü tavuk dürüm (70 g) + ayran (20 cl).",
+    "fiyat_tl": 170
+  },
+  {
+    "kategori": "Öğrenci Menüleri",
+    "urun_adi": "Öğrenci Çıtır Tavuk Burger Menü",
+    "aciklama": "Çıtır tavuk burger + ayran (20 cl).",
+    "fiyat_tl": 220
+  },
+  {
+    "kategori": "Öğrenci Menüleri",
+    "urun_adi": "Öğrenci Doyuran Tavuk Döner Dürüm Menü",
+    "aciklama": "Yarım lavaş tavuk döner (60 g) + ayran (20 cl).",
+    "fiyat_tl": 120
+  },
+  {
+    "kategori": "Öğrenci Menüleri",
+    "urun_adi": "Öğrenci Yarım Ekmek Arası Tavuk Döner Menü",
+    "aciklama": "Yarım ekmek arası tavuk döner (60 g) + ayran (20 cl).",
+    "fiyat_tl": 120
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Yarım Ekmek Arası Tavuk Döner Menü",
+    "aciklama": "Yarım ekmek arası tavuk döner + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 220
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Tam Ekmek Arası Tavuk Döner Menü",
+    "aciklama": "Tam ekmek arası tavuk döner (110 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 310
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Yarım Lavaş Döner Menü",
+    "aciklama": "Yarım lavaş tavuk döner (60 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 220
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Tam Lavaş Döner Menü",
+    "aciklama": "Tam lavaş tavuk döner (110 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 300
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Hatay Usulü Tavuk Döner Menü (S)",
+    "aciklama": "Hatay usulü tavuk dürüm (70 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 270
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Hatay Usulü Tavuk Döner Menü (M)",
+    "aciklama": "Hatay usulü tavuk dürüm (110 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 320
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Hatay Usulü Tavuk Döner Menü (L)",
+    "aciklama": "Hatay usulü tavuk dürüm (130 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 350
+  },
+  {
+    "kategori": "Avantajlı Menüler (Tek Kişilik)",
+    "urun_adi": "Hatay Usulü Tavuk Döner Menü (XL)",
+    "aciklama": "Hatay usulü tavuk dürüm (150 g) + patates kızartması (100 g) + ayran.",
+    "fiyat_tl": 380
+  },
+  {
+    "kategori": "2'li & Aile Menüler",
+    "urun_adi": "Karışık 2'li Menü",
+    "aciklama": "Hatay usulü dürüm + tam somun ekmek arası tavuk döner ve menüdeki yan ürünler.",
+    "fiyat_tl": 670
+  },
+  {
+    "kategori": "2'li & Aile Menüler",
+    "urun_adi": "Hatay Duo Menü",
+    "aciklama": "2 adet Hatay usulü M dürüm + patates kızartması (200 g) ve menü içecekleri.",
+    "fiyat_tl": 540
+  },
+  {
+    "kategori": "2'li & Aile Menüler",
+    "urun_adi": "Hatay Aile Menü",
+    "aciklama": "4 adet Hatay usulü M dürüm + 2 porsiyon patates kızartması ve içecek.",
+    "fiyat_tl": 1100
+  },
+  {
+    "kategori": "2'li & Aile Menüler",
+    "urun_adi": "Hatay 3'lü Menü",
+    "aciklama": "3 adet Hatay usulü M dürüm + 2 porsiyon patates kızartması ve içecek.",
+    "fiyat_tl": 740
+  },
+  {
+    "kategori": "Çıtır Burgerler",
+    "urun_adi": "Çıtır Tavuk Burger",
+    "aciklama": "Çıtır tavuk burger, marul, domates, salatalık turşusu, ketçap ve özel mayonez.",
+    "fiyat_tl": 190
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Patates Kızartması (Orta Boy)",
+    "aciklama": "Parmak dilim patates kızartması.",
+    "fiyat_tl": 100
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Patates Kızartması (Büyük Boy)",
+    "aciklama": "Parmak dilim patates kızartması.",
+    "fiyat_tl": 140
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Soğan Halkası (6 Adet)",
+    "aciklama": "6 adet çıtır soğan halkası.",
+    "fiyat_tl": 70
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Soğan Halkası (12 Adet)",
+    "aciklama": "12 adet çıtır soğan halkası.",
+    "fiyat_tl": 140
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Tavuk Nugget (4 Adet)",
+    "aciklama": "4 adet tavuk nugget.",
+    "fiyat_tl": 80
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Tavuk Nugget (8 Adet)",
+    "aciklama": "8 adet tavuk nugget.",
+    "fiyat_tl": 160
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Süs Biberi Turşusu",
+    "aciklama": "Tek kişilik süs biberi turşusu.",
+    "fiyat_tl": 10
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Lavaş",
+    "aciklama": "1 adet lavaş.",
+    "fiyat_tl": 30
+  },
+  {
+    "kategori": "Yan Ürünler ve Ekstralar",
+    "urun_adi": "Jalapeno",
+    "aciklama": "Tek kişilik jalapeno biber.",
+    "fiyat_tl": 20
+  },
+  {
+    "kategori": "Soslar",
+    "urun_adi": "Ketçap",
+    "aciklama": "1 porsiyon ketçap.",
+    "fiyat_tl": 10
+  },
+  {
+    "kategori": "Soslar",
+    "urun_adi": "Sarımsaklı Mayonez Sosu",
+    "aciklama": "Özel hazırlanmış sarımsaklı mayonez.",
+    "fiyat_tl": 15
+  },
+  {
+    "kategori": "Soslar",
+    "urun_adi": "Acı Sos",
+    "aciklama": "Acı sos.",
+    "fiyat_tl": 15
+  },
+  {
+    "kategori": "Soslar",
+    "urun_adi": "Mayonez",
+    "aciklama": "1 porsiyon mayonez.",
+    "fiyat_tl": 10
+  },
+  {
+    "kategori": "Soslar",
+    "urun_adi": "Cheddar Sosu",
+    "aciklama": "1 porsiyon cheddar sos.",
+    "fiyat_tl": 20
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Ayran (20 cl)",
+    "aciklama": "Küçük boy ayran.",
+    "fiyat_tl": 30
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Ayran (27,5 cl)",
+    "aciklama": "Büyük boy ayran.",
+    "fiyat_tl": 50
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Şalgam Suyu (30 cl)",
+    "aciklama": "Pet şişe şalgam suyu.",
+    "fiyat_tl": 50
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Limonata (25 cl)",
+    "aciklama": "Pet şişe limonata.",
+    "fiyat_tl": 50
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Coca-Cola (33 cl)",
+    "aciklama": "Kutu Coca-Cola.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Coca-Cola Zero Sugar (33 cl)",
+    "aciklama": "Kutu Coca-Cola Zero Sugar.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Su (1,5 l)",
+    "aciklama": "Pet şişe su.",
+    "fiyat_tl": 50
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Su (50 cl)",
+    "aciklama": "Pet şişe su.",
+    "fiyat_tl": 30
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fanta (33 cl)",
+    "aciklama": "Kutu Fanta.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Sarıyer Cola (33 cl)",
+    "aciklama": "Kutu Sarıyer Cola.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fuse Tea Şeftali (33 cl)",
+    "aciklama": "Kutu şeftali aromalı Fuse Tea.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fuse Tea Limon (33 cl)",
+    "aciklama": "Kutu limon aromalı Fuse Tea.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fuse Tea Karpuz (33 cl)",
+    "aciklama": "Kutu karpuz aromalı Fuse Tea.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fuse Tea Mango & Ananas (33 cl)",
+    "aciklama": "Kutu mango & ananas aromalı Fuse Tea.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fuse Tea Karpuz & Çilek (33 cl)",
+    "aciklama": "Kutu karpuz & çilek aromalı Fuse Tea.",
+    "fiyat_tl": 90
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Coca-Cola (1 L)",
+    "aciklama": "1 litrelik Coca-Cola.",
+    "fiyat_tl": 120
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Coca-Cola (1,5 L)",
+    "aciklama": "1,5 litrelik Coca-Cola.",
+    "fiyat_tl": 150
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Coca-Cola (2,5 L)",
+    "aciklama": "2,5 litrelik Coca-Cola.",
+    "fiyat_tl": 200
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fanta (1 L)",
+    "aciklama": "1 litrelik Fanta.",
+    "fiyat_tl": 120
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fanta (1,5 L)",
+    "aciklama": "1,5 litrelik Fanta.",
+    "fiyat_tl": 150
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Fanta (2,5 L)",
+    "aciklama": "2,5 litrelik Fanta.",
+    "fiyat_tl": 200
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Limonlu Soda (20 cl)",
+    "aciklama": "Cam şişe limonlu soda.",
+    "fiyat_tl": 40
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Sade Soda (20 cl)",
+    "aciklama": "Cam şişe sade soda.",
+    "fiyat_tl": 35
+  },
+  {
+    "kategori": "İçecekler",
+    "urun_adi": "Elmalı Soda (20 cl)",
+    "aciklama": "Cam şişe elmalı soda.",
+    "fiyat_tl": 40
+  }
+]

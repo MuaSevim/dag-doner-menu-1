@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#214a35">
+  <meta name="description" content="Dağ Döner'in lezzet dolu menüsünü keşfet. Hatay usulü dürümler, Dağ burritoları, çıtır burgerler ve paylaşmalık menüler.">
+  <title>Dağ Döner — Lezzetin zirvesi.</title>
+  <link rel="icon" href="logos/logo-single.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Menüye geç</a>
+  <div class="topline"><span>MARDİN’DEN, BOL LEZZETLE.</span><span>İyi bir gün, iyi bir dönerle başlar. <span aria-hidden="true">✳</span></span></div>
+  <header class="header">
+    <a href="#" class="brand" aria-label="Dağ Döner ana sayfa"><img src="logos/logo-single.png" alt="" width="54" height="54"><span>DAĞ DÖNER<small>LEZZETİN ZİRVESİ</small></span></a>
+    <nav aria-label="Ana menü"><a class="nav-active" href="#menu">Menümüz</a><a href="#paylas">Birlikte daha güzel</a><a href="#hikaye">Dağ’ın lezzeti</a></nav>
+    <a class="button button-green header-order" href="https://www.yemeksepeti.com/restaurant/mtph/dag-doner" target="_blank" rel="noopener noreferrer">Sipariş ver <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> AÇLIĞINA GÜZEL BİR MOLA.</p>
+        <h1 id="hero-title">Lezzet <span>dağlar</span> <br>aşar.</h1>
+        <p class="hero-description">Bol malzeme, tam kıvamında sos, sıcacık döner.<br>Bir ısırık al. Günün güzelleşsin.</p>
+        <a class="button button-orange" href="#menu">Hadi, menüye bakalım <span aria-hidden="true">↘</span></a>
+        <div class="hero-notes"><span><i aria-hidden="true">✓</i> Bol malzeme</span><span><i aria-hidden="true">✓</i> Özel soslar</span><span><i aria-hidden="true">✓</i> Tam mutluluk</span></div>
+        <svg class="hero-doodle" viewBox="0 0 110 65" fill="none" aria-hidden="true"><path d="M5 12c23 34 44 36 55 20 12-18-8-25-11-8-5 24 25 32 52 14m-12-8 14 7-8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="hero-posters" role="group" aria-label="Dağ’ın imza lezzetleri">
+        <button class="hero-poster" data-product="10" aria-label="Dağ Burrito detaylarını gör">
+          <img src="assets/images/poster-burrito.webp" alt="Yeni Dağ Burritomuz — Denediniz mi?" fetchpriority="high" width="1024" height="1536">
+          <span class="poster-footer"><strong>Dağ Burrito</strong><span class="poster-price" data-hero-price="10">250 <small>₺</small></span><span class="poster-arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="hero-poster" data-product="4" aria-label="Dağ Döner detaylarını gör">
+          <img src="assets/images/poster-dag-doner.webp" alt="Yeni Dağ Dönerimizi — Denediniz mi?" fetchpriority="high" width="1024" height="1536">
+          <span class="poster-footer"><strong>Dağ Döner</strong><span class="poster-price" data-hero-price="4">250 <small>₺</small></span><span class="poster-arrow" aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>İŞTAHININ PEŞİNDEN GİT <span>✳</span> BOL SOS, BOL KEYİF <span>✳</span> LEZZETİN ZİRVESİ <span>✳</span> İŞTAHININ PEŞİNDEN GİT <span>✳</span> BOL SOS, BOL KEYİF <span>✳</span> LEZZETİN ZİRVESİ <span>✳</span></div></div>
+
+    <section id="menu" class="menu-section" aria-labelledby="menu-title">
+      <div class="section-heading"><div><p class="eyebrow">NE ÇEKİYOR CANIN?</p><h2 id="menu-title">Her moduna <em>bir lezzet.</em></h2></div><p>Klasiklerden vazgeçemeyenlere de,<br>“bugün farklı olsun” diyenlere de.</p></div>
+      <div class="menu-toolbar"><div class="category-tabs" id="category-tabs" role="group" aria-label="Menü kategorileri"></div><button class="search-toggle" aria-label="Menüde ara" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></div>
+      <div class="search-panel" id="search-panel" hidden><label for="search">Canının çektiği lezzeti bul</label><div class="search-input-wrap"><input id="search" type="search" placeholder="Dürüm, burrito, ayran…" autocomplete="off"><button id="clear-search" aria-label="Aramayı temizle">×</button></div></div>
+      <div class="results-heading"><div><span id="category-kicker">MENÜNÜN YILDIZLARI</span><h3 id="category-title">İlk ısırıkta favorin.</h3></div><div class="results-controls"><span id="result-count" aria-live="polite"></span><label class="sort-label"><span class="sr-only">Ürünleri sırala</span><select id="sort"><option value="default">Önerilen sıralama</option><option value="price-asc">Fiyat: düşükten yükseğe</option><option value="price-desc">Fiyat: yüksekten düşüğe</option></select></label></div></div>
+      <div class="product-grid" id="product-grid" aria-label="Ürünler"><p class="loading-message">Lezzetler hazırlanıyor…</p></div>
+      <div class="menu-bottom"><p><span aria-hidden="true">✳</span> Karar vermesi zor. Sevmesi kolay.</p><button class="text-button" id="show-all">Tüm menüyü keşfet <span aria-hidden="true">↗</span></button></div>
+      <noscript><p>İnteraktif menü için JavaScript’i etkinleştirin. <a href="references/Dağ Döner – Menü.html">Alternatif menüyü açın</a>.</p></noscript>
+    </section>
+
+    <section class="share-section" id="paylas" aria-labelledby="share-title"><div class="share-copy"><p class="eyebrow">MASADA HERKESE YER VAR</p><h2 id="share-title">Keyif, paylaştıkça<br><em>dağ gibi olur.</em></h2><p>Arkadaşları çağır, aileyi topla.<br>Bol lezzetli menülerimizle sofrayı şenlendir.</p><button class="button button-green" id="family-cta">Paylaşmalık menüler <span aria-hidden="true">↗</span></button></div><div class="share-photo"><img src="assets/images/family-menu.webp" alt="Dört dürüm, patates, soğan halkası ve Coca-Cola ile Hatay Aile Menü" loading="lazy" width="1448" height="1086"><span class="share-sticker">Sen, ben,<br><strong>bir de döner.</strong><span aria-hidden="true">♡</span></span></div></section>
+
+    <section class="story-section" id="hikaye" aria-labelledby="story-title"><div class="story-symbol" aria-hidden="true"><svg viewBox="0 0 140 100"><path d="m6 89 37-53 20 26L88 13l46 76H6Z"/><path d="m73 42 15-29 22 36-17-8-9 10-11-9Z"/></svg><span>İŞİN SIRRI<br>İŞİNİ SEVMEK.</span></div><div><p class="eyebrow">BİZİM İÇİN MESELE SADECE DÖNER DEĞİL.</p><h2 id="story-title">Her lokmada <em>iyi hisset.</em></h2><p>Özenle hazırlanan tavuk döner, taze malzemeler ve kendimize has soslar. Dağ Döner’de sevdiğimiz lezzetleri, sevdiğimiz insanlarla buluşturuyoruz. Gösterişsiz, bol, tam yerinde.</p></div><span class="story-flower" aria-hidden="true">✳</span></section>
+  </main>
+
+  <footer><div class="footer-main"><a href="#" class="brand footer-brand"><img src="logos/logo-single.png" alt="Dağ Döner logosu" loading="lazy" width="60" height="60"><span>DAĞ DÖNER<small>LEZZETİN ZİRVESİ</small></span></a><p>Dağ gibi lezzet.<br>İçten bir mutluluk.</p><a href="https://www.yemeksepeti.com/restaurant/mtph/dag-doner" target="_blank" rel="noopener noreferrer">Yemeksepeti’nden sipariş ver <span aria-hidden="true">↗</span></a><a href="#" class="back-top" aria-label="Sayfanın başına dön">↑</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Dağ Döner. Afiyetle.</span><span>Fiyatlara KDV dahildir. Görseller temsilidir.</span><button class="footer-info" id="allergen-info">Alerjen bilgisi <span aria-hidden="true">↗</span></button></div></footer>
+
+  <dialog id="product-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Pencereyi kapat">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
