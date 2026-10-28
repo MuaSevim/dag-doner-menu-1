@@ -1,17 +1,14 @@
 export const categories = [
   { id: 'popular', label: 'Favoriler', icon: '✳', kicker: 'MENÜNÜN YILDIZLARI', title: 'İlk ısırıkta favorin.' },
+  { id: 'classic', label: 'Klasikler', icon: '🥙', source: 'Klasik Dönerlerimiz', title: 'Klasiklerin yeri ayrı.' },
   { id: 'hatay', label: 'Hatay Usulü', icon: '🌯', source: 'Hatay Usulü Tavuk Dönerler', title: 'Sosu bol. Keyfi bambaşka.' },
-  { id: 'classic', label: 'Klasik Dönerler', icon: '🥙', source: 'Klasik Dönerlerimiz', title: 'Klasiklerin yeri ayrı.' },
-  { id: 'burrito', label: 'Dağ Burrito', icon: '🌮', source: 'Dağ Burritoları', title: 'Bir dürümden çok daha fazlası.' },
-  { id: 'menus', label: 'Menüler', icon: '🍟', source: 'Avantajlı Menüler (Tek Kişilik)', title: 'Yanına mutluluk da ekledik.' },
+  { id: 'burrito', label: 'Dağ Burritolar', icon: '🌮', source: 'Dağ Burritoları', title: 'Bir dürümden çok daha fazlası.' },
   { id: 'student', label: 'Öğrenci Menüleri', icon: '🎒', source: 'Öğrenci Menüleri', title: 'Ders arası, lezzet molası.' },
+  { id: 'menus', label: 'Menüler', icon: '🍟', source: 'Avantajlı Menüler (Tek Kişilik)', title: 'Yanına mutluluk da ekledik.' },
   { id: 'family', label: 'Paylaşmalık', icon: '♡', source: "2'li & Aile Menüler", title: 'Kalabalık sofraların favorisi.' },
-  { id: 'sides', label: 'Atıştırmalıklar', icon: '🍟', source: 'Yan Ürünler ve Ekstralar', title: 'Yanına çok yakışır.' },
+  { id: 'offers', label: 'Fırsatlar', icon: '🥤', source: 'Coca-Cola Fırsat Menüleri', title: 'Bir arada, tam kıvamında.' },
+  { id: 'sides', label: 'Atıştırmalıklar', icon: '🍟', sources: ['Yan Ürünler ve Ekstralar', 'Çıtır Burgerler', 'Soslar'], title: 'Yanına çok yakışır.' },
   { id: 'drinks', label: 'İçecekler', icon: '🥤', source: 'İçecekler', title: 'Buz gibi bir eşlikçi.' },
-  { id: 'offers', label: 'Coca-Cola Fırsatları', icon: '🥤', source: 'Coca-Cola Fırsat Menüleri', title: 'Bir arada, tam kıvamında.' },
-  { id: 'burger', label: 'Çıtır Burger', icon: '🍔', source: 'Çıtır Burgerler', title: 'Her ısırığı çıtır çıtır.' },
-  { id: 'sauces', label: 'Soslar', icon: '◉', source: 'Soslar', title: 'Son dokunuş senden.' },
-  { id: 'all', label: 'Tüm Menü', icon: '↗', title: 'Canının çektiği her şey.' },
 ];
 
 export const popularIds = [7, 10, 4, 33, 1, 26, 30, 34];
@@ -29,7 +26,7 @@ const shortNames = {
 
 export function enrichProducts(data) {
   return data.map((item, id) => {
-    const category = categories.find(c => c.source === item.kategori);
+    const category = categories.find(c => c.source === item.kategori || c.sources?.includes(item.kategori));
     const isDrink = item.kategori === 'İçecekler';
     const image = item.kategori === 'Soslar' ? null : `assets/images/product-${id}.webp`;
     return { ...item, id, name: shortNames[id] || item.urun_adi, categoryId: category?.id, categoryLabel: category?.label || item.kategori, image, isDrink: isDrink || id === 41 };
@@ -42,7 +39,7 @@ export function normalize(value) {
 
 export function filterProducts(products, categoryId, query = '', sort = 'default') {
   const category = categories.find(c => c.id === categoryId) || categories[0];
-  let result = category.id === 'popular' ? popularIds.map(id => products.find(p => p.id === id)).filter(Boolean) : products.filter(p => category.id === 'all' || p.kategori === category.source);
+  let result = categoryId === 'all' ? [...products] : category.id === 'popular' ? popularIds.map(id => products.find(p => p.id === id)).filter(Boolean) : products.filter(p => p.categoryId === category.id);
   const term = normalize(query.trim());
   if (term) result = result.filter(p => normalize(`${p.urun_adi} ${p.name} ${p.aciklama} ${p.kategori}`).includes(term));
   if (sort === 'price-asc') result.sort((a, b) => a.fiyat_tl - b.fiyat_tl);
