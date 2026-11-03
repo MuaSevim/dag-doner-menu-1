@@ -1,0 +1,47 @@
+{
+  "revision": "indoor-v4",
+  "note": "Mekân içi fiyatlar. İçecek fiyatları son açık talimata göre sabittir; yüzde indirimi uygulanmaz. Kimlikler sabittir; liste sırasına göre yeniden numaralandırmayın.",
+  "removedIds": [48, 54],
+  "prices": {
+    "0": 70, "1": 140, "2": 70, "3": 140, "4": 200, "5": 300,
+    "6": 110, "7": 140, "8": 170, "9": 200,
+    "10": 200, "11": 230, "12": 260,
+    "13": 200, "14": 290, "15": 320, "16": 580,
+    "17": 140, "18": 180, "19": 100, "20": 100,
+    "21": 170, "22": 240, "23": 170, "24": 240,
+    "25": 210, "26": 240, "27": 270, "28": 300,
+    "29": 670, "30": 540, "31": 1100, "32": 740,
+    "33": 150, "34": 80, "35": 110, "36": 45, "37": 90,
+    "38": 65, "39": 130, "40": 15, "41": 20, "42": 15,
+    "43": 10, "44": 15, "45": 10, "46": 10, "47": 15,
+    "49": 30, "50": 35, "51": 35,
+    "52": 70, "53": 70, "55": 15, "56": 70, "57": 70,
+    "58": 70, "59": 70, "60": 70, "61": 70, "62": 70,
+    "63": 80, "64": 100, "65": 120, "66": 80, "67": 100, "68": 120,
+    "69": 30, "70": 25, "71": 30,
+    "72": 300, "73": 400, "74": 300, "75": 330, "76": 360,
+    "77": 30, "78": 30, "79": 10
+  },
+  "changes": {
+    "10": { "name": "Dağ Burrito · 120 g" },
+    "13": { "name": "Çıtır Tavuk Menü", "kategori": "Çıtır Burgerler", "aciklama": "Çıtır tavuk burger, orta boy patates kızartması ve kutu Coca-Cola." },
+    "22": { "image": "assets/images/product-z.webp" },
+    "40": { "name": "Ekstra Turşu Tabağı", "aciklama": "Ekstra turşu tabağı.", "image": "assets/images/product-40.webp" },
+    "41": { "name": "Çift Lavaş", "kategori": "İlave Malzeme Ekleme", "aciklama": "Dönerinize ilave lavaş.", "image": null },
+    "42": { "name": "Ekstra Süs Biberi / Jalapeno", "aciklama": "Tercihinize göre ekstra süs biberi veya jalapeno." },
+    "44": { "name": "Özel Sarımsaklı Mayonez" },
+    "45": { "name": "Özel Acı Sos" },
+    "49": { "name": "Büyük Ayran (27,5 cl)" },
+    "50": { "name": "Şalgam (30 cl)" }
+  },
+  "additions": [
+    { "id": 72, "name": "Dağ Döner Menü", "kategori": "Avantajlı Menüler (Tek Kişilik)", "aciklama": "Dağ döner, orta boy patates kızartması ve ayran.", "image": "assets/images/product-72.webp" },
+    { "id": 73, "name": "Porsiyon Menü", "kategori": "Avantajlı Menüler (Tek Kişilik)", "aciklama": "Porsiyon tavuk döner ve ayran.", "image": "assets/images/product-x.webp" },
+    { "id": 74, "name": "Burrito Menü · 120 g", "kategori": "Avantajlı Menüler (Tek Kişilik)", "aciklama": "120 g tavuk dönerli burrito, orta boy patates kızartması ve ayran.", "image": "assets/images/product-74.webp" },
+    { "id": 75, "name": "Burrito Menü · 140 g", "kategori": "Avantajlı Menüler (Tek Kişilik)", "aciklama": "140 g tavuk dönerli burrito, orta boy patates kızartması ve ayran.", "image": "assets/images/product-74.webp" },
+    { "id": 76, "name": "Burrito Menü · 160 g", "kategori": "Avantajlı Menüler (Tek Kişilik)", "aciklama": "160 g tavuk dönerli burrito, orta boy patates kızartması ve ayran.", "image": "assets/images/product-74.webp" },
+    { "id": 77, "name": "25 g Tavuk", "kategori": "İlave Malzeme Ekleme", "aciklama": "Dönerinize ilave 25 g tavuk.", "image": null },
+    { "id": 78, "name": "Cheddar Peyniri", "kategori": "İlave Malzeme Ekleme", "aciklama": "Dönerinize ilave cheddar peyniri.", "image": null },
+    { "id": 79, "name": "Cheddar Sosu", "kategori": "İlave Malzeme Ekleme", "aciklama": "Dönerinize ilave cheddar sosu.", "image": null }
+  ]
+}

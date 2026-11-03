@@ -1,5 +1,5 @@
 import { categories, filterProducts, formatPrice } from './menu-model.js';
-import { loadBaseProducts, loadOverrides, applyOverrides } from './menu-data.js';
+import { loadBaseProducts, loadOverrides, applyOverrides, displayImageUrl } from './menu-data.js';
 
 const $ = selector => document.querySelector(selector);
 const container = $('#menu-categories');
@@ -20,8 +20,9 @@ function escapeHtml(value) {
 }
 
 function productImage(product) {
+  if (!product.image && product.kategori !== 'Soslar') return '<div class="product-placeholder">Görsel eklenecek</div>';
   if (!product.image) return `<div class="sauce-art" role="img" aria-label="${escapeHtml(product.name)} sos illüstrasyonu"><span class="sauce-bowl" style="--sauce-color:${sauceColors[product.id] || '#d96336'}"></span></div>`;
-  return `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.urun_adi)}" loading="lazy" width="480" height="343">`;
+  return `<img src="${escapeHtml(displayImageUrl(product.image))}" alt="${escapeHtml(product.urun_adi)}" loading="lazy" width="480" height="343">`;
 }
 
 function productCard(product) {

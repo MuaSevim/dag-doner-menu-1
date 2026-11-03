@@ -1,5 +1,9 @@
 # Dağ Döner — Dijital Menü
 
+## Mekân içi menü ve masa baskısı
+
+Güncel fiyatlar `references/indoor-menu.json` dosyasından gelir; dijital menü ve `/print-menu.html` aynı veriyi kullanır. Eski 72 ürünlük JSON yalnızca kaynak arşividir. Yeni ürünlerle birlikte dijital menüde 78 ürün bulunur; küçük ayran ve 1,5 L su kaldırılmıştır. Baskı sürümü kapak dahil 5 sabit A4 sayfadır. Kullanım ve fiyat geçişi ayrıntıları: **[PRINT-MENU.md](PRINT-MENU.md)**. Dashboard kayıtları için güncellenen **`firestore.rules` yeniden yayınlanmalıdır**.
+
 ## Yönetim paneli
 
 `/admin.html`: e-posta/şifre ile ürün adı, fiyatı, açıklaması ve görseli düzenleme. Firebase/Cloudinary/Netlify kurulumu için **[DASHBOARD-SETUP.md](DASHBOARD-SETUP.md)** dosyasını izleyin. Güvenlik kuralları ve Netlify ortam değişkenleri yayınlanmadan panel tam çalışmaz.
