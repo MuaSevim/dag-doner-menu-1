@@ -3,7 +3,8 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, setPe
 import { getFirestore, doc, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
 import { firebaseConfig, adminUid, cloudName } from './firebase-config.js';
 import { categories, normalize, formatPrice } from './menu-model.js';
-import { loadBaseProducts, loadOverrides, applyOverrides, validImage } from './menu-data.js';
+import { loadBaseProducts, loadOverrides, applyOverrides, validImage, displayImageUrl } from './menu-data.js';
+import { priceRevision } from './indoor-catalog.js';
 
 const $ = selector => document.querySelector(selector);
 const app = initializeApp(firebaseConfig);
@@ -26,7 +27,7 @@ function renderList() {
 function preview(image) {
   $('#preview').hidden = !image;
   $('#no-image').hidden = Boolean(image);
-  if (image) $('#preview').src = image; else $('#preview').removeAttribute('src');
+  if (image) $('#preview').src = displayImageUrl(image); else $('#preview').removeAttribute('src');
 }
 function selectProduct(id) {
   if (busy || !confirmDiscard()) return;
@@ -135,7 +136,7 @@ $('#editor').addEventListener('submit', async e => {
       if (!upload.ok || !validImage(uploaded.secure_url)) throw new Error('Görsel yüklenemedi. Cloudinary ayarlarını kontrol edin.');
       image = uploaded.secure_url;
     }
-    await setDoc(doc(db, 'products', String(product.id)), { name, description, price, image, updatedAt: serverTimestamp() });
+    await setDoc(doc(db, 'products', String(product.id)), { name, description, price, image, priceRevision, updatedAt: serverTimestamp() });
     products = products.map(p => p.id === product.id ? { ...p, name, urun_adi: name, aciklama: description, fiyat_tl: price, image } : p);
     dirty = false;
     $('#image-file').value = '';

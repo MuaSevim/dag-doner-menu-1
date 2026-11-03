@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dağ Döner — Baskı Menüsü</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="logos/logo-single.png">
+  <link rel="stylesheet" href="print-menu.css">
+  <script src="print-menu.js" type="module"></script>
+</head>
+<body>
+  <aside class="print-tools" aria-label="Baskı ayarları">
+    <a href="/">← Web menüsü</a>
+    <div><strong>Masaya yakışan bir menü.</strong><p>A4 dikey · Ölçek %100 · Üst/alt bilgileri kapat · Arka plan grafiklerini aç</p></div>
+    <button id="print" disabled>Yazdır / PDF kaydet</button>
+    <p id="status" role="status">Güncel menü hazırlanıyor…</p>
+    <button id="retry" hidden>Tekrar dene</button>
+  </aside>
+  <main id="sheets" aria-label="Baskıya hazır menü sayfaları"></main>
+</body>
+</html>

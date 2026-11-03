@@ -7,7 +7,7 @@ export const categories = [
   { id: 'menus', label: 'Menüler', icon: '🍟', source: 'Avantajlı Menüler (Tek Kişilik)', title: 'Yanına mutluluk da ekledik.' },
   { id: 'family', label: 'Paylaşmalık', icon: '♡', source: "2'li & Aile Menüler", title: 'Kalabalık sofraların favorisi.' },
   { id: 'offers', label: 'Fırsatlar', icon: '🥤', source: 'Coca-Cola Fırsat Menüleri', title: 'Bir arada, tam kıvamında.' },
-  { id: 'sides', label: 'Atıştırmalıklar', icon: '🍟', sources: ['Yan Ürünler ve Ekstralar', 'Çıtır Burgerler', 'Soslar'], title: 'Yanına çok yakışır.' },
+  { id: 'sides', label: 'Atıştırmalıklar', icon: '🍟', sources: ['Yan Ürünler ve Ekstralar', 'Çıtır Burgerler', 'Soslar', 'İlave Malzeme Ekleme'], title: 'Yanına çok yakışır.' },
   { id: 'drinks', label: 'İçecekler', icon: '🥤', source: 'İçecekler', title: 'Buz gibi bir eşlikçi.' },
 ];
 

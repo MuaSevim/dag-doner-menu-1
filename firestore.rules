@@ -5,9 +5,11 @@ service cloud.firestore {
       allow read: if true;
       allow create, update: if request.auth != null
         && request.auth.uid == 'OD1pdLs23JRTvS88ya5X5FwgUCG2'
-        && productId.matches('([0-9]|[1-6][0-9]|7[01])')
+        && productId.matches('([0-9]|[1-7][0-9])')
+        && !(productId in ['48', '54'])
         && request.resource.data.keys().hasAll(['name', 'description', 'price', 'image', 'updatedAt'])
-        && request.resource.data.keys().hasOnly(['name', 'description', 'price', 'image', 'updatedAt'])
+        && request.resource.data.keys().hasOnly(['name', 'description', 'price', 'image', 'priceRevision', 'updatedAt'])
+        && request.resource.data.priceRevision == 'indoor-v4'
         && request.resource.data.name is string
         && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 150
         && request.resource.data.description is string && request.resource.data.description.size() <= 2000
@@ -15,7 +17,7 @@ service cloud.firestore {
         && request.resource.data.price >= 0 && request.resource.data.price <= 1000000
         && (request.resource.data.image == null || (request.resource.data.image is string
           && request.resource.data.image.size() <= 1000
-          && (request.resource.data.image.matches('assets/images/product-[0-9]+[.]webp')
+          && (request.resource.data.image.matches('assets/images/product-([0-9]+|x|z)[.]webp')
             || request.resource.data.image.matches('https://res[.]cloudinary[.]com/xsnngbvg/image/upload/.*'))))
         && request.resource.data.updatedAt == request.time;
       allow delete: if false;

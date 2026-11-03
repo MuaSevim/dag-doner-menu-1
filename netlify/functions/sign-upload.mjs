@@ -15,7 +15,7 @@ export default async request => {
     const claims = JSON.parse(Buffer.from(token.split('.')[1], 'base64url').toString());
     if (identity.users?.[0]?.localId !== adminUid || claims.aud !== firebaseConfig.projectId) return reply(403, 'Yetkiniz yok.');
     const { productId } = await request.json();
-    if (!Number.isInteger(productId) || productId < 0 || productId > 71) return reply(400, 'Geçersiz ürün.');
+    if (!Number.isInteger(productId) || productId < 0 || productId > 79 || [48, 54].includes(productId)) return reply(400, 'Geçersiz ürün.');
     const apiKey = process.env.CLOUDINARY_API_KEY;
     const secret = process.env.CLOUDINARY_API_SECRET;
     if (!apiKey || !secret) return reply(503, 'Netlify görsel yükleme ayarları eksik.');

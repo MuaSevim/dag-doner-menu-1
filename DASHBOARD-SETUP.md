@@ -1,5 +1,9 @@
 # Yönetim paneli kurulumu
 
+## Mekân içi fiyat sürümü
+
+Masa menüsü güncellemesinden sonra `firestore.rules` dosyasını yeniden Publish edin. Yeni ürünler 72–79 kimliklerini kullanır, yeni kayıtlar `priceRevision: indoor-v4` alanını içerir. Başlangıç verileri `references/indoor-menu.json` üzerinden güncellenir. Eski Firestore online fiyat/isim/açıklamaları uygulanmaz; görseller korunur. Önceki indoor düzenlemeleri korunur, ancak eski fiyatlar son menü indirimlerinin, içecek fiyatlarının ve 200 TL Çıtır Tavuk Menü fiyatının önüne geçmez. Yeni dashboard’da kaydettiğiniz fiyat ve içerik iki menüye de yansır. Detaylar `PRINT-MENU.md` içindedir.
+
 Adres: https://remarkable-caramel-c9d03b.netlify.app/admin.html
 
 ## 1. Firestore kuralları
